@@ -32,14 +32,15 @@ public class Webscraper {
                 wordcount += 1;
             }
         }
+        System.out.println(wordcount);
         return wordcount;
     }
 
 
     public static void main(String[] unused) {
-        System.out.println(countword("http://erdani.com/tdpl/hamlet.txt" , "is"));
-        System.out.println(countword("https://www.bls.gov/tus/charts/chart9.txt" , "and"));
-        System.out.println(countword("http://tgftp.nws.noaa.gov/data/raw/fz/fzus53.klot.srf.lot.txt", "and"));
+        countword("http://erdani.com/tdpl/hamlet.txt" , "is");
+        countword("https://www.bls.gov/tus/charts/chart9.txt" , "and");
+        countword("http://tgftp.nws.noaa.gov/data/raw/fz/fzus53.klot.srf.lot.txt", "and");
 
     }
 
